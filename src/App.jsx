@@ -1,3 +1,4 @@
+import Input from './atomic/atoms/Input';
 import About from './components/About';
 import GetTouch from './components/GetTouch';
 import Header from './components/Header';
