@@ -6,15 +6,9 @@ module.exports = {
 	theme: {
 		extend: {
 			screens: {
-				'mobile': {
-					max: '320px'
-				},
-				'tablet': {
-					max: '792px'
-				},
-				'web': {
-					max: '1280px'
-				}
+				'mobile': '320px',
+				'tablet': '767px',
+				'web': '1280px'
 			},
 			colors: {
 				'black': '#27272A',
@@ -31,8 +25,10 @@ module.exports = {
 				'mobile': '15px',
 				'tablet': '39px',
 				'web': '85px',
-			}
+			},
+		
 		},
+		
 	},
 	plugins: [],
 }
