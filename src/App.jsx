@@ -1,3 +1,4 @@
+import Button from './atomic/atoms/Button';
 import About from './components/About';
 import GetTouch from './components/GetTouch';
 import Header from './components/Header';
@@ -6,6 +7,7 @@ import Main from './components/Main';
 function App() {
 	return (
 		<>
+			<Button />
 			<Header />
 			<Main />
 			<About />
