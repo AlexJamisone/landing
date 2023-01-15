@@ -1,6 +1,7 @@
-import { HiMail } from 'react-icons/hi';
-import { MdOutlineError } from 'react-icons/md';
-import { useState } from 'react';
+import React, { useState } from 'react';
+import MailIcon from '../../icons/MailIcon';
+import ErrorIcon from '../../icons/ErrorIcon';
+import PersonIcon from '../../icons/PersonIcon';
 const Input = ({
 	labelFild,
 	typeInput,
@@ -8,6 +9,7 @@ const Input = ({
 	value,
 	isDesabled,
 	textarea,
+	mailIcon,
 }) => {
 	const [focused, setFocused] = useState(false);
 	const [error, setError] = useState(false);
@@ -19,7 +21,7 @@ const Input = ({
 		string.length <= 0 ? setError(true) : setError(false);
 	};
 	return (
-		<div className="flex flex-col">
+		<div className="flex flex-col mb-4">
 			<label htmlFor="input" className="mb-2">
 				<span className="after:content-['*'] after:ml-0.5 after:text-red font-main font-semibold text-black">
 					{labelFild}
@@ -36,17 +38,26 @@ const Input = ({
 				<div className="relative">
 					{error ? (
 						<>
-							<MdOutlineError
+							<ErrorIcon
 								className={`absolute top-1/4 ml-5 fill-red w-6 h-6`}
 							/>
 							<span className="absolute -bottom-5 text-sm font-main font-semibold text-red leading-5">
 								Please fill this mandatory field
 							</span>
 						</>
-					) : (
-						<HiMail
+					) : //Think how can I do this better
+					mailIcon ? (
+						<MailIcon
 							className={`absolute top-1/4 ml-5 ${
 								focused ? 'fill-lavender' : 'fill-gray-dark'
+							} w-6 h-6`}
+						/>
+					) : (
+						<PersonIcon
+							className={`absolute top-1/4 ml-5 ${
+								focused
+									? 'fill-lavender stroke-lavender'
+									: 'fill-gray-dark stroke-gray-dark'
 							} w-6 h-6`}
 						/>
 					)}
