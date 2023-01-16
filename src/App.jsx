@@ -8,9 +8,9 @@ function App() {
 		<>	
 			<Header />
 			<Main />
-			<About />
+			{/* <About />
 			<GetTouch />
-			<footer></footer>
+			<footer></footer> */}
 		</>
 	);
 }

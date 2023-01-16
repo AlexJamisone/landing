@@ -20,9 +20,8 @@ const links = [
 const Header = () => {
 	const [open, setOpen] = useState(false);
 	return (
-		<header className="bg-white relative">
-			<nav className="flex justify-center">
-				<div className="container h-16 tablet:mx-tablet mobile:mx-mobile flex justify-between items-center">
+		<header className="bg-white relative h-16 flex justify-center border-b-[1px] border-gray-light flex-none">
+			<nav className="container web:mx-web tablet:mx-tablet mobile:mx-mobile flex justify-between items-center">
 					<a href="/" className="cursor-pointer">
 						<Logo className={`fiil-black`} />
 					</a>
@@ -38,8 +37,8 @@ const Header = () => {
 						/>
 					)}
 					<ul
-						className={`web:flex tablet:flex mobile:absolute web:static tablet:static gap-6 font-main text-gray-dark font-semibold text-base leading-6 mobile:right-0 mobile:top-16 mobile:bg-white transition-all duration-300 ease-in ${
-							open ? 'mobile:top-0' : 'mobile:top-[-490px]'
+						className={`web:flex tablet:flex mobile:absolute web:static tablet:static gap-6 font-main text-gray-dark font-semibold text-base leading-6 mobile:right-0 mobile:top-16 mobile:bg-white transition-all duration-300 ease-in z-10 ${
+							open ? '' : 'mobile:top-[-490px]'
 						}`}
 					>
 						{links.map(({ link, title }, index) => (
@@ -56,7 +55,6 @@ const Header = () => {
 							</li>
 						))}
 					</ul>
-				</div>
 			</nav>
 		</header>
 	);
