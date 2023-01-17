@@ -26,9 +26,12 @@ module.exports = {
 				'tablet': '39px',
 				'web': '85px',
 			},
-		
 		},
 		
+	},
+	variants: {
+		margin: ['last'],
+		border: ['last']
 	},
 	plugins: [],
 }
