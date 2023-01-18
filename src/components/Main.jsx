@@ -1,14 +1,14 @@
 import Button from '../atomic/atoms/Button';
 import nick from '../images/nick1.png';
+import Subtitle from '../atomic/atoms/Subtitle';
 
 const Main = () => {
 	return (
-		<main className="bg-white relative web:flex web:flex-row tablet:flex tablet:flex-row mobile:flex mobile:flex-col justify-center overflow-hidden mobile:h-[500px] web:h-[768px] tablet:h-[455px] font-main">
-			<div className="web:mx-web mobile:mx-mobile tablet:mx-tablet mobile:mt-[27px] tablet:mt-11 flex flex-col">
-				<h3 className="mobile:text-2xl tablet:text-6xl leading-9 font-bold mb-1 text-black web:text-6xl web:leading-[90px] web:mt-[162px]">
-					Hei, I'm Nick
-				</h3>
-				<p className="mobile:text-sm mobile:leading-[21px] tablet:text-xl text-gray-dark font-normal web:text-xl leading-[30px]">
+		<main className="bg-white relative web:flex web:flex-row tablet:flex tablet:flex-row mobile:flex mobile:flex-col justify-center overflow-hidden mobile:h-[500px] web:h-[768px] tablet:h-[455px]  font-main">
+			<div className="web:mx-web mobile:mx-mobile tablet:mx-tablet mobile:mt-[27px] tablet:mt-11 web:mt-[162px] flex flex-col">
+			
+				<Subtitle content={`Hey, I’m Nick`} h1={true}/>
+				<p className="mobile:text-sm mobile:leading-body-mobile tablet:text-subtitle-mobile text-gray-dark font-normal leading-subtitle/body">
 					Frontend developer
 				</p>
 				<p className="mobile:w-[290px] after:inline-block after:w-[25px] after:h-[3px] after:absolute after:-top-[24px] after:left-0 after:bg-lavender relative mt-16 text-gray-dark text-sm leading-[21px] font-norma mb-7 web:mt-[116px] web:text-xl web:w-[445px] web:mb-[60px] tablet:mb-11">
