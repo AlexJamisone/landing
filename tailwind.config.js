@@ -45,6 +45,9 @@ module.exports = {
 				'tablet': '39px',
 				'web': '85px',
 			},
+			backgroundImage: {
+				'gradient': "url('./images/gradient.png')"
+			}
 		},
 	},
 

@@ -2,3 +2,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main-gradient {
+}
+
+.main-gradient::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 1020px;
+	height: 725px;
+    border-radius: 100px;
+    transform: scale(1, -1);
+    transform: rotate(-46deg);
+	top: 36%;
+	right: -22%;
+	background: url('./images/gradient.png');
+}
+
+.about-gradient {
+}
+
+.getTouch-gradient {
+}
