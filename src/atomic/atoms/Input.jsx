@@ -9,7 +9,10 @@ const Input = ({
 	value,
 	isDesabled,
 	textarea,
+	classNameTextAr,
+	className,
 	mailIcon,
+	required,
 }) => {
 	const [focused, setFocused] = useState(false);
 	const [error, setError] = useState(false);
@@ -21,16 +24,21 @@ const Input = ({
 		string.length <= 0 ? setError(true) : setError(false);
 	};
 	return (
-		<div className="flex flex-col mb-4">
-			<label htmlFor="input" className="mb-2">
-				<span className="after:content-['*'] after:ml-0.5 after:text-red font-main font-semibold text-black">
-					{labelFild}
-				</span>
+		<div className={`flex flex-col mb-4 ${className}`}>
+			<label
+				htmlFor="input"
+				className={`${
+					required
+						? `after:content-['*'] after:ml-1 after:text-red`
+						: `after:content-none`
+				} font-main font-semibold text-black mobile:text-subtitle/body-mobile-sm mobile:leading-body-mobile mb-2`}
+			>
+				{labelFild}
 			</label>
 			{textarea ? (
 				<textarea
-					disabled={true}
-					className="w-[677px] h-[122px] rounded-2xl bg-white border-gray-light border-solid border px-5 py-3 resize-none hover:border-lavender transition-all duration-100 placeholder-shown:outline-none outline-lavender placeholder:text-gray-dark placeholder:font-normal font-main disabled:bg-gray-light disabled:hover:border-gray-light"
+					disabled={isDesabled}
+					className={`w-full h-full rounded-2xl mobile:text-sm mobile:leading-body-mobile bg-white border-gray-light border-solid border px-5 py-3 resize-none hover:border-lavender transition-all duration-100 placeholder-shown:outline-none outline-lavender placeholder:text-gray-dark placeholder:font-normal font-main disabled:bg-gray-light disabled:hover:border-gray-light z-10 ${classNameTextAr}`}
 					placeholder={placeholderField}
 					value={value}
 				></textarea>
@@ -41,7 +49,7 @@ const Input = ({
 							<ErrorIcon
 								className={`absolute top-1/4 ml-5 fill-red w-6 h-6`}
 							/>
-							<span className="absolute -bottom-5 text-sm font-main font-semibold text-red leading-5">
+							<span className="absolute -bottom-5 text-sm mobile:text-xs font-main font-semibold text-red leading-5">
 								Please fill this mandatory field
 							</span>
 						</>
@@ -66,7 +74,7 @@ const Input = ({
 						disabled={isDesabled}
 						id="input"
 						type={typeInput}
-						className={`px-14 py-3 bg-white rounded-2xl border border-solid  text-black  placeholder:text-gray-dark placeholder:font-normal font-main  transition-all duration-150 placeholder-shown:outline-none outline-lavender disabled:border-gray-light disabled:bg-gray-light ${
+						className={`w-full px-14 py-3 bg-white rounded-2xl mobile:h-[50px] mobile:text-subtitle/body-mobile-sm mobile:leading-body-mobile border border-solid  text-black  placeholder:text-gray-dark placeholder:font-normal font-main  transition-all duration-150 placeholder-shown:outline-none outline-lavender disabled:border-gray-light disabled:bg-gray-light ${
 							error
 								? 'border-red hover:border-red'
 								: 'border-gray-light hover:border-lavender'

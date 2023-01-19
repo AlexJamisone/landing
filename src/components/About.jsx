@@ -46,13 +46,13 @@ const Experience = [
 	},
 	{
 		date: '2006 - 2007',
-		position: 'Frontend development courses',
-		comp: 'Stepik',
+		position: 'Junior Frontend developer',
+		comp: 'Facebook',
 	},
 	{
 		date: '2000 - 2005',
 		position: 'Frontend developer',
-		comp: 'Saint Petersburg State University',
+		comp: 'Stanford University',
 	},
 ];
 
