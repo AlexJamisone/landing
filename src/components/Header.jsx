@@ -23,7 +23,7 @@ const Header = () => {
 	return (
 		<header className="bg-white relative h-16 flex justify-center border-b-[1px] border-gray-light flex-none">
 			<nav className="container web:mx-web tablet:mx-tablet mobile:mx-mobile flex justify-between items-center">
-				<a href="/" className="cursor-pointer">
+				<a href="/landing" className="cursor-pointer">
 					<Logo className={`fiil-black`} />
 				</a>
 				{open ? (
