@@ -1,5 +1,5 @@
 # Landing Page Nick Frontend developer
-[Live Demo](url)
+[Live Demo](https://alexjamisone.github.io/landing/)
 ### Stack:
  - [React CRA](https://create-react-app.dev/)
  - [TailwindCSS](https://tailwindcss.com/)
