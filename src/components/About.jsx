@@ -46,7 +46,7 @@ const Experience = [
 	},
 	{
 		date: '2006 - 2007',
-		position: 'Frontend development courses',
+		position: 'Junior Frontend developer',
 		comp: 'Stepik',
 	},
 	{
@@ -60,7 +60,7 @@ const About = () => {
 	return (
 		<section
 			className="bg-white overflow-hidden font-main web:max-h-[1248px]"
-			id="#about"
+			id="about"
 		>
 			<div className="mobile:mx-mobile tablet:mx-tablet web:mx-web tablet:grid tablet:grid-cols-2 web:gap-x-[1.9rem] tablet:gap-x-0 mobile:mt-12 tablet:mt-20 web:mt-24 web:max-h-full">
 				<Subtitle

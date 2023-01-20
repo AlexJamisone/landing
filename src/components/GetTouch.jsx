@@ -28,7 +28,7 @@ const GetTouch = () => {
 			mobile:after:bg-center
 			mobile:z-10
 			`
-		}>
+		} id='getTouch'>
 			<div className={`
 				bg-[#fff] 
 				rounded-2xl

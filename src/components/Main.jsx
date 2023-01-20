@@ -5,7 +5,7 @@ import Text from '../atomic/atoms/Text';
 
 const Main = () => {
 	return (
-		<main className="bg-white relative web:flex web:flex-row tablet:flex tablet:flex-row mobile:flex mobile:flex-col justify-center overflow-hidden mobile:h-[500px] web:h-[768px] tablet:h-[455px]  font-main">
+		<main className="bg-white relative web:flex web:flex-row tablet:flex tablet:flex-row mobile:flex mobile:flex-col justify-center overflow-hidden mobile:h-[500px] web:h-[768px] tablet:h-[455px]  font-main" id='main'>
 			<div className="web:mx-web mobile:mx-mobile tablet:mx-tablet mobile:mt-[2.15rem] tablet:mt-11 web:mt-[162px] flex flex-col">
 				<Subtitle content={`Hey, I’m Nick`} h1={true} className={`mobile:mb-[0.55rem] tablet:mb-1 web:mb-1`}/>
 				<Text content={'Frontend developer'} className={'mobile:mb-[59px] tablet:mb-[52px] web:mb-[116px]'}/>
