@@ -46,8 +46,8 @@ const Experience = [
 	},
 	{
 		date: '2006 - 2007',
-		position: 'Junior Frontend developer',
-		comp: 'Facebook',
+		position: 'Frontend development courses',
+		comp: 'Stepik',
 	},
 	{
 		date: '2000 - 2005',
@@ -59,10 +59,10 @@ const Experience = [
 const About = () => {
 	return (
 		<section
-			className="bg-white overflow-hidden font-main"
+			className="bg-white overflow-hidden font-main web:max-h-[1248px]"
 			id="#about"
 		>
-			<div className="mobile:mx-mobile tablet:mx-tablet web:mx-web tablet:grid tablet:grid-cols-2 web:gap-x-[1.9rem] tablet:gap-x-0 mobile:mt-12 tablet:mt-20 web:mt-24">
+			<div className="mobile:mx-mobile tablet:mx-tablet web:mx-web tablet:grid tablet:grid-cols-2 web:gap-x-[1.9rem] tablet:gap-x-0 mobile:mt-12 tablet:mt-20 web:mt-24 web:max-h-full">
 				<Subtitle
 					content={'About me'}
 					h2={true}
